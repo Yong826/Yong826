@@ -1,0 +1,15 @@
+java script 선언 3가지
+
+1. <p script="color:red">안녕</p>
+
+2. 
+<head>
+	<script>
+		자바스크립트 문법
+	</script>
+</head>
+
+3. 
+<head>
+	<script type="text/javasrcript"></script>
+</head>

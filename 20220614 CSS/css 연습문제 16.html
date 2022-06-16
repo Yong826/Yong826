@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .img1{   
+        background-size: 150px;
+        background-color: blue;
+        width: 300px;
+        height: 300px;
+        position: relative;
+}
+        .img2{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <p>absolute는 static이 아닌 첫 부모를 기준으로 한다.</p>
+    <div>
+        <div class="img1"><img class="img2" src="C:\Users\GreenArt\Desktop\20220613 월 css\Desktop\image\cosmos.jpg"></div>
+    </div>
+</body>
+
+</html>

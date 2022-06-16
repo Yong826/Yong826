@@ -1,0 +1,15 @@
+css 선언 3가지
+1. <p style="color:red"> 안녕 </p>
+
+2. <head>
+
+<style>
+ 선택자 {속성:값}
+</style>
+
+</head>
+
+3. 
+<head>
+ <link rel="stylesheet" href="css경로">
+</head>

@@ -1,0 +1,107 @@
+header{
+    margin: 0px;
+    padding: 10px 5px 0.2px 10px ;
+    box-sizing: border-box;
+    background:linear-gradient(to top, rgb(244, 240, 240), rgb(81, 81, 81));
+}
+h1 {
+    color: red;
+}
+.a{
+    background-color: rgb(69, 189, 233);
+    width: 180px;
+    height: 120px;
+    padding: 20px;
+    border: #333333 1px solid; 
+    position: relative;
+    transform: translate(15px, 15px)
+}
+
+table, tr, td {
+    table-layout: auto;
+    width: 800px;
+    height: 140%;
+    border: 2px solid #333333;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+}
+td{
+    color: blue;
+}
+.background{
+    table-layout: auto;
+    background-color: rgb(95, 216, 95);
+    padding: 0%;
+}
+
+.b{
+    table-layout: auto;
+    border: solid red;
+    background-color: bisque;
+    border-radius: 5px;
+    width: 220px;
+    height: 200px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(1650px, -147px);
+}
+
+.c{
+    table-layout: auto;
+    border: solid red;
+    background-color: bisque;
+    border-radius: 5px;
+    width: 220px;
+    height: 300px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(1650px, -150px)
+}
+.d{
+    table-layout: auto;
+    border: solid black;
+    background-color: bisque;
+    border-radius: 5px;
+    width: 1350px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(250px, -680px);
+    padding: 0.5%;
+}
+.f {
+    table-layout: auto;   
+    border: solid black;
+    background-color: bisque;
+    border-radius: 5px;
+    width: 1350px;
+    height: 280px;
+    top: 50%;
+    left: 50%;
+    transform: translate(250px, -660px);
+    padding: 0.5%;
+     
+}
+
+.n {
+    table-layout: auto;   
+    border: solid black;
+    background-color: bisque;
+    border-radius: 5px;
+    width: 1350px;
+    height: 180px;
+    top: 50%;
+    left: 50%;
+    transform: translate(250px, -640px);
+    padding: 0.5%;
+}
+
+footer{
+    background-color: blue;
+    padding: 10px ;
+    top: 50%;
+    left: 50%;
+}
