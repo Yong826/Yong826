@@ -1,0 +1,43 @@
+1. let carName = 'Volvo';
+
+2. let x = 50
+
+3. let x = 5 /   let y = 10 /   x+y = 15
+
+4. alert (z=x+y)
+
+5. var con_test = confirm("진짜로 삭제하시겠습니까?");
+if(con_test == true){
+  alert("삭제됨");
+}
+else if(con_test == false){
+  alert("취소됨");
+}
+
+
+6. let str1 = prompt("몇", "");
+let str2 = prompt("더하기 몇은?", "");
+
+let num1;
+let num2;
+
+num1 = Number(str1);
+num2 = Number(str2);
+
+alert(num1 + num2);
+ 
+
+7. let agePrompt = prompt('나이를 입력하세요.');
+
+let age = Number(agePrompt);
+
+if(age >= 19) {
+  alert('인증됨');
+}
+else if (age <= 19) {
+    alert('인증되지않음');
+}
+
+'something ${something}'
+
+
