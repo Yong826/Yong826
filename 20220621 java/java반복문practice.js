@@ -125,5 +125,15 @@ for(let i = 2; i <= 9; i++){
       alert(`${i} * ${j} = ${i * j}`)
     }
   }
+
+or
+
+for(let i = 2; i < 9; i++){
+    for(let j = 1; j <= 9; j++){
+        alert(i + "*" + j + "=" + (i*j) )
+}
+alert (i + "번째 반복문이 끝났습니다.")
+}
+
 */
 
