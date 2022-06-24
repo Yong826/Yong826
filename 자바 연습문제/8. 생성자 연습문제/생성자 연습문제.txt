@@ -1,0 +1,53 @@
+1. 다음 프로그램을 완성하시오
+(1)클래스명 : Salary
+  ①필드 :  String name(이름)
+           int salary (연봉)
+  ②생성자 : Salary(String n, int s) 를 넘겨받아 name, salary에 대입
+  ③메서드 : getInfomation1()메서드에서 이름과 연봉을 출력
+
+(2)클래스명 : Test34 ==> Salary를 상속받음
+  ①필드 : String department (부서)
+  ②생성자 : name, salary,department를 넘겨받아 각각 필드에 대입
+             필요하면 부모 생성자 호출할수도 있다
+  ③메서드 : getInfomation2()메서드에서 부서출력
+
+(3)main()함수에서
+   Test34  ob = new Test34("그린이",85000000,"기획부"); 로 시작할것
+
+
+(4)출력
+이름 : 그린이
+연봉 : 85000000
+부서 : 기획부
+
+class Salary {
+
+ // 필드명((1)-①번 처리)
+
+ // 생성자((1)-②번 처리)
+
+ // 메서드((1)-③번 처리)
+
+}
+public class Test34 extends Salary {
+ // 필드명((2)-①번 처리)
+ // 생성자((2)-②번 처리)
+
+ public Test34(String name, int salary, String department) {
+  super(name, salary);
+  this.department = department;
+ }
+ // 메서드((2)-③번 처리)
+ 
+}
+
+2. Member 클래스로 모델링하려고 합니다.
+회원의 데이터로는 이름, 아이디, 패스워드, 나이가 있습니다.
+이 데이터들을 가지는 Member 클래스를 선언해 보세요.
+
+3. MemberService클래스에 login()메소드와 logout메소드를 선언하려고 합니다.
+login()메소드를 호출 할 때에는 매개값으로 id와 password를 제공하고,
+logout()메소드는 id만 매개값으로 제공합니다.
+MemberService클래스와 login(), logout()메소드를 선언해 보세요.
+1) login()메소드는 매개값이 id가 "hone", 매개값이 password가"12345"일 경우에만 true로 리턴하고, 그 이외의 값 일 경우에는 false를 리턴하도록 하세요.
+2) logout()메소드의 내용은 "로그아웃 되었습니다." 가 출력되도록 하세요.
