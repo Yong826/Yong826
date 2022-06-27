@@ -1,10 +1,14 @@
+
+// window.onload : 웹브라우저가 실행되자 마자
+
 window.onload=function () {
-    let idchk= document.quertslector("#idchk")
+    let idchk= document.querySelector("#idchk")
+
     idchk.onblur=function(){
-        let idValue=document.quertslector("#idchk").value;
+        let idValue=document.querySelector("#idchk").Value;
         // 아이디는 5~20자 이내로 입력하셔야합니다.
-        let idmsg=document.quertslector("#idmsg");
-        if (idValue.lenght>=5 && querySelector("idmsg"));{
+        let idmsg=document.querySelector("#idmsg");
+        if (idValue.lenght>=5 && idValue.lenght<=20){
             idmsg.innerHTML="정상입니다.";
             idmsg.style.color="green";
         }else{
