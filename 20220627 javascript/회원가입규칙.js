@@ -3,6 +3,7 @@ window.onload = function () {
   
     user.onblur = function () {
     let useridRegex = /^[a-z]+[a-z0-9-_]{5,20}$/g;
+
       let userValue = user.value;
       let idmsg = document.querySelector("#idmsg");
   
@@ -18,7 +19,8 @@ window.onload = function () {
     let userpassword = document.querySelector("#userpassword")
   
     userpassword.onblur = function () {
-      let userpassRegex = /^[a-zA-Z0-9!@#$%^&*()?_~]{8,20}/;
+      let userpassRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,16}$/;
+
       let userpasswordValue = userpassword.value;
       let pwmsg = document.querySelector("#pwmsg");
   
@@ -35,6 +37,7 @@ window.onload = function () {
   
     useremail.onblur = function () {
       let regEmail = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
+      
       let useremailValue = useremail.value;
       let emailmsg = document.querySelector("#emailmsg");
   
