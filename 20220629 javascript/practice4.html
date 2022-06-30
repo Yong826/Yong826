@@ -11,12 +11,14 @@
             <script type="text/javascript" src="../20220629 javascript\practice4.js"></script>
 </head>
 <body>
+<!-- 1번 -->
 <h1>1. 연산</h1>
 <input type="text" id="num1">
 +<input type="text" id="num2">
 =<input type="text" id="num3">
 <button>연산</button>
 
+<!-- 2번 -->
 <h1>2. 총합구하기</h1>
 가격<input type="text" id="val1">
 X 수량 
@@ -29,5 +31,12 @@ X 수량
 </select>
 총합: <label id="val2"></label>
 
+<!-- 3번 -->
+<h1>3. 총합구하기2 (선택된 값만)</h1>
+<p>바나나(1000원) <input type="checkbox" id="banana" value="1000" name="fruit"></p>
+<p>사과 (500원) <input type="checkbox" id="apple" value="500" name="fruit"></p>
+<p>배 (1500원) <input type="checkbox" id="pear" value="1500" name="fruit"></p>
+<input type="button" value="총합구하기" id="resultbtn">
+<p>선택한 총가격: <label id="val"></label></p>
 </body>
 </html>
