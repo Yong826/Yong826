@@ -43,9 +43,16 @@ public class practice {
 
         ///////////////////////////////////////////////////////////
 
-		char chz = 'z'; 
+		char chz = 'a'; 
 		boolean bo = ((chz >= 'A' && chz <= 'Z') || (chz >= 'a' && chz <= 'z') || (chz >= '0' && chz <= '9')); 
 		System.out.println(bo); 
 
+
+        // 문자를 저장하는 ch변수를 선언
+        // char ch = 'a';
+
+        // true / false 값을 저장할수 있는 boolean 변수를 선언
+        // boolean b = 조건식(영문자(대문자 또는 소문자)이거나 숫자 일때만.) ? true : false ;
+        // boolean b = ((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122) || (ch >= 48 && ch <= 57)); 
 	}
 }
