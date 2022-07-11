@@ -5,7 +5,7 @@ public class prac {
 
 
         Student hong = new Student();
-        hong.name = "hong";
+    .name = "hong";
         hong.ban = 3;
         hong.no = 40;
         hong.kor = 80;
