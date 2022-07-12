@@ -1,0 +1,33 @@
+
+body { 
+    display: block;
+    margin: 8px;
+  }
+
+h1{
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#top{
+    text-align: center;
+    font-weight: bold;
+}
+
+hr{
+    border: solid 1px;
+}
+
+.mail{
+    background-color: silver;
+    width: 150px;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+}
+
+p{
+    font-size: small;
+}
