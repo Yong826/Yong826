@@ -40,3 +40,17 @@ public class SubHealth extends SuperHealth{
         } 
         System.out.printf("당신의 비만도 %.f이고, %s 입니다", fat, this.result);
     }
+
+    // // 속성
+    // double s_weight;
+    // double fat;
+    // String result;
+
+    // SubHealth(){
+    //     s_weight = 0.0;
+    //     fat= 0.0;
+    //     result = null;
+    // }
+
+    // void calculate(){}
+    // void output2(){}

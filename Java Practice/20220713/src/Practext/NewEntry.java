@@ -5,6 +5,4 @@ public class NewEntry {
 
         SubEntry e = new SubEntry("OOP","Object Oriented Programming",1991);
     }
-
-
 }
