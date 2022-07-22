@@ -17,6 +17,8 @@ DNAME VARCHAR (10),
 LOC VARCHAR (20)
 );
 
+
+
 insert into EMP (EMPNO, ENAME, JOB, MGR, hiredate, SAL, COMM, DEPTNO )
 values
 ('7369','SMITH','CLERK','7902','1980-12-17 00:00:00','800', NULL,'20'),
