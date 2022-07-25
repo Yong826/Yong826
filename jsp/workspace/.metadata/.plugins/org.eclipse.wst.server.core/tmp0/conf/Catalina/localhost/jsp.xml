@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context docBase="D:\00-BACKUP\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\jsp" path="/jsp" reloadable="true" source="org.eclipse.jst.jee.server:jsp">
+	<Resource auth="container" driverClassName="com.mysql.jdbc.Driver" factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory" name="jdbc/mysql" password="1234" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/exam?serverTimezone=Asia/Seoul" username="root"/>
+</Context>
