@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+	// 사용자가 입력한 id 값을 id 변수에 저장
+	String id = request.getParameter("id");
+	// 사용자가 입력한 pw 값을 pw 변수에 저장
+	String pw = request.getParameter("pw");
+	// 사용자가 입력한 addr 값을 addr 변수에 저장
+	String addr = request.getParameter("addr");
+	%>
+</body>
+</html>
