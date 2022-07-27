@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="UTF-8"%>
-    <%@ page import="java.sql.*" %>
+<%@ page import="java.sql.*" %>
 <%@ page import="javax.sql.*" %>
 <%@ page import="javax.naming.*" %>
 <!DOCTYPE html>
@@ -21,10 +21,12 @@
 		<td><input type ="password" name="pw"></td>
 	</tr>
 	<tr>
-		<td><input type="submit" value ="로그인"></td>
+		<td colspan="2">
+			<input type="submit" value ="로그인">
+			<a href="member.jsp">회원가입</a>
+		</td>
 	</tr>
 </table>
 </form>
 
 </body>
-</html>
