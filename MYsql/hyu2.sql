@@ -1,15 +1,15 @@
 create database exam;
 use exam;
 
--- create table member(
--- id varchar(10) primary key,
--- password varchar(10) not null,
--- address varchar(10) not null,
--- phone varchar (10),
--- email varchar (10),
--- name varchar (10),
--- age int
--- );
+create table member(
+id varchar(10) primary key,
+password varchar(10) not null,
+address varchar(10),
+phone varchar (10),
+email varchar (10),
+name varchar (10),
+age int
+);
 
 -- -- insert into 테이블명 (컬럼명, 컬럼명, 컬럼명, 컬럼명, 컬럼명,)
 -- insert into member(id, password, address, phone, email, name, age)
@@ -67,15 +67,15 @@ use exam;
 -- ('bbbb222','9999','busan');
 
 
--- create table board(
--- 		bno int auto_increment primary key,
--- 		title varchar(100) not null comment '게시글제목',
---         content text null comment '게시글내용글숫자',
---         writer varchar(100) not null comment '작성자',
---         regdate timestamp default now() comment '작성일시',
---         cnt int default 0 comment '조회수',
---         id varchar(20) not null comment '작성자 아이디'
--- );
+ create table board(
+bno int auto_increment primary key,
+title varchar(100) not null comment '게시글제목',
+content text null comment '게시글내용글숫자',
+name varchar(100) not null comment '작성자',
+regdate timestamp default now() comment '작성일시',
+cnt int default 0 comment '조회수',
+id varchar(20) not null comment '작성자 아이디'
+);
 
 -- insert into board (title, writer, id)
 -- values ('나는나다','나는나다','abcd1234');
@@ -97,9 +97,6 @@ writer varchar(5),
 regdate timestamp default now(),
 cnt int default 0,
 id varchar(20) not null);
-
-insert into board (title, content, writer, id)
-values ('현태는게이다','현태게이1234','정현태','java1234');
 
 
 select *
