@@ -1,0 +1,5 @@
+package org.yong.mapper;
+
+public interface TestMapper {
+
+}
