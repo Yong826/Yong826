@@ -23,7 +23,14 @@ if (userpassRegex.test(userpassword.value)) {
 }else{
     pwmsg.innerHTML = "8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요";
     pwmsg.style.color = "red";
+}if (password1 != password2) {
+              alert("두 비밀번호가 맞지 않습니다."); 
+             form.password1.value = ""; 
+             form.password2.value = ""; 
+             form.password2.focus();
+              return false;        
 }
+
 })
 
 
