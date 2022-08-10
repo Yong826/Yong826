@@ -5,12 +5,16 @@
 <head>
 <meta charset="UTF-8">
 <link rel ="stylesheet" href="${pageContext.request.contextPath}/resources/css/logincss.css" type="text/css">
+<link rel="shortcut icon" type="image⁄x-icon" href="../main homepage\bilibili-brands.svg" />
 <title>로그인</title>
 </head>
 <body>
 
 <form action="/Member/login"  class="loginForm">
-	<h2>로그인</h2>
+
+	  <div class="logo">
+        <a href="#"><i class="fa-brands fa-bilibili fa-3x"></i></a>
+      </div>
 	<tr>
 		<td>
 			<div class="textForm">

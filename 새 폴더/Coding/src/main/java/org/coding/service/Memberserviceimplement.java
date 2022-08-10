@@ -14,4 +14,9 @@ public class Memberserviceimplement implements MemberService {
 	public void memberjoin (MemberVo member) { 
 		MSM.memberjoin(member);
 	}
+	
+	
+	// public void list(Model model) {
+	// model,addAtribute("list", bs.list());
+	// bm.list}
 }
