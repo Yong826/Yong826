@@ -1,0 +1,5 @@
+package org.coding.model;
+
+public class LoginVO {
+
+}

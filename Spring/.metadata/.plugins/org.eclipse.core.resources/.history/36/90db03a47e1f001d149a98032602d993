@@ -1,0 +1,19 @@
+package org.coding.service;
+
+import org.coding.mapper.ReplyMapper;
+import org.coding.model.ReplyVO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ReplyServiceImpl implements ReplyService{
+	@Autowired
+	ReplyMapper rm;
+	
+	
+	
+	// 댓글 쓰기를 위한 구현
+	public int rewrite(ReplyVO reply) {
+		rm.rewrite(reply);
+	}
+}

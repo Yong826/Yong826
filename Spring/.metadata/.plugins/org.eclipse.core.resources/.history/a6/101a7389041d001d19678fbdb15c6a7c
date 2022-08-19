@@ -1,0 +1,9 @@
+window.onload = function () {
+	let id = document.querySelector("#id")
+	
+	id.onblur = function () {
+		
+		let idValue = id.Value;
+		let idmsg = document.querySelector("#idmsg1");
+	}
+};

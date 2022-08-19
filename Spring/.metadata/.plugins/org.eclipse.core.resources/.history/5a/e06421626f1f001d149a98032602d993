@@ -1,0 +1,25 @@
+package org.coding.controller;
+
+import org.coding.model.ReplyVO;
+import org.coding.service.ReplyService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+
+@Controller
+public class ReplyController {
+	@Autowired
+	ReplyService rs;
+	
+	 @RequestMapping(value = "/replies/new", method = RequestMethod.POST)
+	 public ResponseEntity<ReplyVO> replywrite(@RequestBody ReplyVO reply){
+		 
+		 rs.rewrite(reply);
+		 
+		 return null;
+	 }
+}

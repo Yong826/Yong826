@@ -1,0 +1,9 @@
+package org.coding.mapper;
+
+import org.coding.model.ReplyVO;
+
+// 댓글 관련 mapper
+public interface ReplyMapper {
+ // 댓글 쓰기를 위한 구현
+	public void rewrite(ReplyVO reply);
+}
