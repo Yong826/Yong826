@@ -1,0 +1,32 @@
+$(document).ready(function(){
+	
+	// 파일 전송 버튼을 클릭하면
+	$("#uploadBtn").on("click",function(){
+		// alert("하이맨")
+		// 파일 업로드 관련 로직 처리
+		// .jsp의 form 태그를 대채 (FormData함수)
+		let formData = new FormData();
+		
+		let inputFile = $("input[name='uploadFile']");
+		
+		let files = inputFile[0].files;
+		
+		console.log(files);
+		
+		for(let i=0; i<files.length; i++){
+			// .jsp의 파일선택을 통해 선택한 파일들을 form태그에 추가
+			formData.append("uploadFile", files[i]);
+		}
+		
+		// ajax 를 통해서 uploadcontoller에 파일 관련 데이터 전송
+		$.ajax({
+			type:"post",
+			url:"/uploadAjaxAction",
+			data:formData,
+			contentType:false,
+			processData:false
+		})
+	})
+
+
+})

@@ -111,7 +111,7 @@ function joinform(){
 	let useremailValue = useremail.value;
 	
 	if (result === false || useremailValue ==="" || userValue === "" || userpasswordValue ==""){
-		alert("빈칸을 입력 해주세요.")
+		alert("값이 제대로 입력 되지않았습니다.")
 		return false;
 	}else{
 		alert("회원가입을 축하드립니다.")

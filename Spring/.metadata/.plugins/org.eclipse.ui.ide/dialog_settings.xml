@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\01-STUDY\gitclone\Yong826\Spring"/>
+		<item value="D:\01-STUDY\Source"/>
+		<item value="D:\01-STUDY\Source\Servers\Art\Coding"/>
 		<item value="D:\01-STUDY\Source\Servers"/>
 	</list>
 	<section name="CleanDialogSettings">
@@ -9,5 +12,7 @@
 		<item value="402" key="DIALOG_HEIGHT"/>
 		<item value="710" key="DIALOG_X_ORIGIN"/>
 		<item value="252" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 </section>

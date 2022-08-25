@@ -11,15 +11,13 @@
 <link rel ="stylesheet" href="${pageContext.request.contextPath}/resources/css/logincss.css" type="text/css">
 <link rel="shortcut icon" type="image⁄x-icon" href="${pageContext.request.contextPath}/resources/img/bilibili-brands.svg" />
 <title>로그인</title>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type ="text/javascript" src="${pageContext.request.contextPath}/resources/js/loginjs.js"></script>
 </head>
 <body>
 
-<form action="/login"  class="loginForm" onsubmit="return loginform()" method="post">
+<form action="/Member/login"  class="loginForm">
 
 	  <div class="logo__bili">
-        <a href="/">
+        <a href="#">
         <i class="fa-brands fa-bilibili fa-3x" style="color:black;">
         </i>
         </a>
@@ -28,7 +26,7 @@
 	<tr>
 		<td>
 			<div class="textForm">
-				<input type="text" name="id" class="in" id="id" placeholder="아이디" />
+				<input type="text" name="id" class="in" placeholder="아이디" />
 			</div>
 		</td>
 	</tr>
@@ -37,12 +35,12 @@
         <td>
              <label id="idmsg"></label>
         </td>
-   </tr>  
+    </tr>  
 
 	<tr>
 		<td>
 			<div class="textForm" >
-				<input type="password" name="password" class="in" id="password" placeholder="비밀번호" />
+				<input type="password" name="password" class="in" placeholder="비밀번호" />
 			</div>
 		</td>
 	</tr>
@@ -51,10 +49,8 @@
         <td>
              <label id="pwmsg"></label>
         </td>
-    </tr>
+    </tr>  
 	
-	<br>
-	<br>
 	
 	<tr>
 		<td>
