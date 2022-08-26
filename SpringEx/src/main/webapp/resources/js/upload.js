@@ -66,9 +66,17 @@ $(document).ready(function(){
 				console.log(result)
 			
 			var str="";
+				
+			let input = "";
+			
 				$(result).each(function(i,obj){
 					// console.log(obj)
 					// console.log(obj.fileName)
+					
+					input+="<input type ='text' name='attach["+i+"].uploadPath' value='" + obj.uploadPath+"'>"
+					input+="<input type ='text' name='attach["+i+"].fileName' value='" + obj.fileName+"'>"
+					input+="<input type ='text' name='attach["+i+"].uuid' value='" + obj.uuid+"'>"
+					input+="<input type ='text' name='attach["+i+"].imageType' value='" + obj.imageType+"'>"
 					
 					// 만약 img 결과가 true면
 					if(obj.imageType){
@@ -90,7 +98,7 @@ $(document).ready(function(){
 				})
 				
 				$("#uploadResult ul").html(str);
-			
+				$("#form").append(input).submit();
 			}
 		})
 		
