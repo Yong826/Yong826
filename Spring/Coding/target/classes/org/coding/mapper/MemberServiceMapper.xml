@@ -7,4 +7,13 @@
   		insert into member (id, name , password, email)
   		values(#{id},#{name},#{password},#{email})
   	</insert>
+  	
+  	<select id="login" resultType="org.coding.model.MemberVo">
+  			select *
+  			from member
+  			where id=#{id}
+  			and password=#{password}	
+  
+  	</select>
+  	
   </mapper>

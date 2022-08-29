@@ -7,6 +7,8 @@
 <script src="https://kit.fontawesome.com/f8ebc57e81.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type ="text/javascript" src="${pageContext.request.contextPath}/resources/js/login.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 <link rel ="stylesheet" href="${pageContext.request.contextPath}/resources/css/logincss.css" type="text/css">
 <link rel="shortcut icon" type="image⁄x-icon" href="${pageContext.request.contextPath}/resources/img/bilibili-brands.svg" />
@@ -14,7 +16,7 @@
 </head>
 <body>
 
-<form action="/Member/login"  class="loginForm">
+<form action="/" id="loginForm" class="loginForm" onsubmit="return loginForm()">
 
 	  <div class="logo__bili">
         <a href="#">
@@ -26,18 +28,35 @@
 	<tr>
 		<td>
 			<div class="textForm">
-				<input type="text" name="id" class="in" placeholder="아이디" />
+				<input type="text" name="id" id="user" class="in" placeholder="아이디" />
 			</div>
 		</td>
 	</tr>
+	
+	
+	<tr>
+        <td>
+            <label id="idmsg"></label>
+       </td>
+   </tr> 
 
 	<tr>
 		<td>
 			<div class="textForm" >
-				<input type="password" name="password" class="in" placeholder="비밀번호" />
+				<input type="password" name="password" id="password" class="in" placeholder="비밀번호" />
 			</div>
 		</td>
 	</tr>
+	
+	
+	<tr>
+		 <td>
+			<label id="pwmsg"></label>
+		</td>
+	</tr>
+	
+	<br>
+	<br>
 	
 	<tr>
 		<td>

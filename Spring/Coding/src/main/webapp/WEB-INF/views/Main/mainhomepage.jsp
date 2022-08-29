@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 
@@ -42,17 +42,29 @@
         <ul id="ul">
           <li id="li"><a href="#">Home</a></li>
           <li id="li"><a href="#">취업tip</a></li>
-          <li id="li"><a href="#">스터디</li>
+          <li id="li"><a href="#">스터디</a></li>
           <li id="li"><a href="#">지식공유</a></li>
           <li id="li"><a href="#">Q&A</a></li>
         </ul>
       </div>
       <!-- 로그인 회원가입 입니다.-->
       <div class="navbar_loginsignin">
-        <ul>
-          <li id="li"><a href="login">로그인</a></li>
-          <li id="li"><a href="signin">회원가입</a></li>
-        </ul>
+		
+		<c:choose>
+			<c:when test = "${sessionScope.login==null}">
+				<a href="login">로그인</a>
+			</c:when>
+			
+			<c:when test = "${sessionScope.signin==null}">
+				<a href="signin">회원가입</a>
+			</c:when>
+			
+			<c:otherwise>
+				${sessionScope.login.id}님 환영합니다. <br>
+				<a href="logout">로그아웃</a>
+			</c:otherwise>	
+		</c:choose>      
+      
       </div>
 
     </div>

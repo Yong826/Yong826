@@ -15,6 +15,8 @@ public class MemberVo {
 	
 	
 	private String email;
+	
+	
 
 	public String getId() {
 		return id;
