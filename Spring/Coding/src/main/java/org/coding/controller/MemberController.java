@@ -23,7 +23,7 @@ public class MemberController {
 			 return "Member/login";
 		 }
 		 
-		 @RequestMapping(value = "/signin", method = RequestMethod.GET)
+		 @RequestMapping(value = "/join", method = RequestMethod.GET)
 		 public String signin() {
 			 return "Member/signin";
 		 }
@@ -36,19 +36,19 @@ public class MemberController {
 		
 		@PostMapping("/loginForm")
 		public String postLogin(MemberVo member, HttpSession session,RedirectAttributes rttr) {
-			System.out.println("bb");
 			boolean result = MS.login(member,session);
 			System.out.println("result="+result);
-			if(result) {
+			if(result){
 			System.out.println("로그인성공");
 			rttr.addFlashAttribute("msg", "success");
 			return "redirect:/";
 		}else{
 			System.out.println("로그인 실패");
-			rttr.addFlashAttribute("msg","fail");
-			return "redirect:/Member/login";
+			rttr.addFlashAttribute("msg","fail");                  
+			return "redirect:login";
 		}
-		}
+		}		
+			
 		@GetMapping("/logout")
 		public String getLogout(HttpSession session) {
 			session.invalidate();

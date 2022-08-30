@@ -53,18 +53,22 @@
 		<c:choose>
 			<c:when test = "${sessionScope.login==null}">
 				<a href="login">로그인</a>
+				<a href="join">회원가입</a>
 			</c:when>
 			
-			<c:when test = "${sessionScope.signin==null}">
-				<a href="signin">회원가입</a>
-			</c:when>
+			
+			
 			
 			<c:otherwise>
 				${sessionScope.login.id}님 환영합니다. <br>
 				<a href="logout">로그아웃</a>
 			</c:otherwise>	
 		</c:choose>      
-      
+		
+					
+      	
+    	
+  
       </div>
 
     </div>

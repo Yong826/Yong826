@@ -37,7 +37,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/GR/Downloads/jstl-1.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/GR/Downloads/taglibs-standard-impl-1.2.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/GR/Desktop/standard.jar"/>
-	<classpathentry kind="lib" path="C:/Users/GR/Desktop/jstl.jar"/>
+	<classpathentry kind="lib" path="C:/Users/GR/Downloads/javax.servlet.jsp.jstl-api-1.2.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
