@@ -1,16 +1,14 @@
 ### Hi there 👋
 
-<!--
-**Yong826/Yong826** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+국비 과정동안 배운 것 , 팀 프로젝트 한 내용
+2022년 6월 ~ 2002년 10월
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+사용한 기술 스택
+HTML
+CSS
+JAVA SCRIPT
+JAVA
+SPIRNG FRAMWORK
+AJAX
+MYBASTIS
+MYSQL
