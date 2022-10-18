@@ -20,6 +20,5 @@ MYSQL
 2022년 10월 ~ ing
 
 사용한 기술스택
-
 REACT
 NODE.JS
